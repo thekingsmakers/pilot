@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexix & AV Trends | Business Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for smooth scrolling and animations */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-divider {
+            position: relative;
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        .section-divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+        }
+        
+        .service-item {
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    <span class="text-gray-800">Nexix</span> & <span class="text-gray-800">AV</span> Trends
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link py-2 text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#nexix" class="nav-link py-2 text-gray-700 hover:text-blue-600">Nexix</a>
+                    <a href="#avtrends" class="nav-link py-2 text-gray-700 hover:text-blue-600">AV Trends</a>
+                    <a href="#contact" class="nav-link py-2 text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800">
+                        Professional <span class="text-blue-600">Business Services</span> You Can Trust
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Nexix Contracting & Services and AV Trends Trading provide comprehensive solutions for your business needs across multiple industries.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#nexix" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                            Explore Nexix
+                        </a>
+                        <a href="#avtrends" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+                            Explore AV Trends
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-in">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Business professionals" 
+                         class="rounded-xl shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nexix Section -->
+    <section id="nexix" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-blue-600">Nexix</span> Contracting and Services
+                </h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-building text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Building Maintenance Works</h3>
+                    <p class="text-gray-600">Comprehensive maintenance solutions for residential and commercial properties.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-concierge-bell text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Hospitality Services</h3>
+                    <p class="text-gray-600">Premium services tailored for the hospitality industry.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-hard-hat text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">General Contracting</h3>
+                    <p class="text-gray-600">End-to-end contracting services for construction projects of all sizes.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-broom text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Cleaning Services</h3>
+                    <p class="text-gray-600">Professional cleaning services for offices, homes, and commercial spaces.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-address-card text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Companies Set Up</h3>
+                    <p class="text-gray-600">Assistance with company formation and business registration.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Web Pages' Software & Design</h3>
+                    <p class="text-gray-600">Professional website development, maintenance, and design services.</p>
+                </div>
+                
+                <div class="service-item bg-gray-50 p-6 rounded-xl border border-gray-200 fade-in md:col-span-2 lg:col-span-3 mx-auto">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-network-wired text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Network Wiring</h3>
+                    <p class="text-gray-600">Professional network infrastructure installation and maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider bg-gray-50">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="bg-white p-4 rounded-full shadow-lg">
+                <i class="fas fa-arrow-down text-blue-600 text-xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- AV Trends Section -->
+    <section id="avtrends" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-blue-600">AV Trends</span> Trading, Contracting and Services
+                </h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-building text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Building Maintenance Works</h3>
+                    <p class="text-gray-600">Professional maintenance services for all types of buildings.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-file-certificate text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Certified Documents Clearance</h3>
+                    <p class="text-gray-600">Expert assistance with document processing and certification.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-concierge-bell text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Hospitality Services</h3>
+                    <p class="text-gray-600">Comprehensive services for the hospitality sector.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-spa text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Cosmetics & Beauty Trading</h3>
+                    <p class="text-gray-600">Trading in women's cosmetics, toiletries, beauty, and hair care products.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-tshirt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Clothes Trading</h3>
+                    <p class="text-gray-600">Fashion and apparel trading services.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-hard-hat text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">General Contracting</h3>
+                    <p class="text-gray-600">Professional contracting services for various projects.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-language text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Certified Translation Services</h3>
+                    <p class="text-gray-600">Professional document translation with certification.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-broom text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Cleaning Services</h3>
+                    <p class="text-gray-600">Thorough cleaning solutions for all environments.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shopping-cart text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Online Trading</h3>
+                    <p class="text-gray-600">E-commerce solutions and online trading services.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-file-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Documents Clearance Office</h3>
+                    <p class="text-gray-600">Expert handling of all document clearance needs.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-keyboard text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Typing Center</h3>
+                    <p class="text-gray-600">Professional typing and document preparation services.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-address-card text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Companies Set Up</h3>
+                    <p class="text-gray-600">Assistance with business registration and company formation.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-hotel text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Hospitality</h3>
+                    <p class="text-gray-600">Comprehensive hospitality management services.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-passport text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Tourism Visa Services</h3>
+                    <p class="text-gray-600">Expert assistance with tourism visa applications.</p>
+                </div>
+                
+                <div class="service-item bg-white p-6 rounded-xl border border-gray-200 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-globe-americas text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">International Visa Services</h3>
+                    <p class="text-gray-600">Visa services for USA, Schengen Europe, and other countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-blue-600">Contact</span> Us
+                </h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 text-white p-10">
+                        <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-map-marker-alt mr-4 text-xl"></i>
+                                <p>123 Business Avenue, Downtown, City</p>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-phone-alt mr-4 text-xl"></i>
+                                <p>+123 456 7890</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4 text-xl"></i>
+                                <p>info@nexix-avtrends.com</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span>Nexix</span> & <span>AV Trends</span>
+                    </h3>
+                    <p class="text-gray-400 max-w-xs">
+                        Providing comprehensive business solutions across multiple industries with professionalism and excellence.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#nexix" class="text-gray-400 hover:text-white transition">Nexix Services</a></li>
+                            <li><a href="#avtrends" class="text-gray-400 hover:text-white transition">AV Trends Services</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#nexix" class="text-gray-400 hover:text-white transition">Contracting</a></li>
+                            <li><a href="#avtrends" class="text-gray-400 hover:text-white transition">Trading</a></li>
+                            <li><a href="#avtrends" class="text-gray-400 hover:text-white transition">Visa Services</a></li>
+                            <li><a href="#nexix" class="text-gray-400 hover:text-white transition">Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">123 Business Avenue</li>
+                            <li class="text-gray-400">City, Country</li>
+                            <li class="text-gray-400">info@nexix-avtrends.com</li>
+                            <li class="text-gray-400">+123 456 7890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2025 Nexix & AV Trends. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for fade-in animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+            
+            // Mobile menu toggle functionality would go here
+        });
+    </script>
+</body>
+</html>
